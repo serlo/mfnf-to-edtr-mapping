@@ -1,0 +1,31 @@
+{
+        "type": "box",
+        "boxType": "blank",
+        "anchorId": "box50022",
+        "title": [
+          {
+            "type": "slate-p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Das ist die Überschrift"
+              }
+            ]
+          }
+        ],
+        "children": [
+          {
+            "type": "slate-container",
+            "children": [
+              {
+                "type": "slate-p",
+                "children": []
+                  {
+                    "type": "text",
+                    "text": "Das ist der Inhalt"
+                  }
+                  }
+                ]
+              }
+            ]
+}

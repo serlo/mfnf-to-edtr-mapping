@@ -1,0 +1,33 @@
+		{
+          "plugin": "multimedia",
+          "state": {
+            "explanation": {
+              "plugin": "rows",
+              "state": [
+                {
+                  "plugin": "text",
+                  "state": [
+                    {
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Baumstämme sind bei geraden,     unverzweigt gewachsenen Bäumen zumindest im unteren Teil ungefähr zylinderförmig.",
+                          "em": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "multimedia": {
+              "plugin": "image",
+              "state": {
+                "src": "https://assets.serlo.org/legacy/57c433c63e8e3_f166fbbd7761add2201d0b82aa8629be4f84c62d.jpg",
+                "alt": "Baumstämme"
+              }
+            },
+            "illustrating": true,
+            "width": 50
+          }
+      }
