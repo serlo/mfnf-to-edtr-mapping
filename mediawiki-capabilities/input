@@ -1,0 +1,11 @@
+- Dokument: Liste von Absätzen, gefolgt von Liste von Überschriften
+- Überschrift: formatierter Text in = gefolgt von Absätzen
+- Absatz: Liste, Tabelle, Gallerie, Template, Referenz, HTML-Kommentar oder formatierter Text
+- Template: Mediawiki-Template
+- Liste: Mediawiki-Liste mit den verschiedenen Arten von List-Items
+- Tabelle: Mediawiki-Tabelle
+- Referenz: intern (doppelte Klammer und evtl. Pipes mit Optionen) oder extern (einfache Klammer und evtl. Caption nach Leerzeichen)
+- Gallery: Liste von Dateien mit je einer optionalen Caption
+- Formatierter Text: Inline-Markup, HTML-Markup oder Whitespace
+- Inline-Markup: strong und emph (jeweils für Text und Absätze)
+- HTML-Markup: math, del, s, ins, u, nowiki, code, blockquote, pre als HTML-Tags
