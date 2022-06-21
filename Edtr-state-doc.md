@@ -68,10 +68,10 @@ Inline math is somehow wrapped into its own element of `type = math`, with `inli
 }
 ```
 
-## Table plugin
+### Table plugin
 A table has a list of children of type `tr` (table row), which in turn have children of type `th` (table header) or `td` (table ???). Each of `th` and `td` has a list of children of type `p`.
 
-## Image plugin
+### Image plugin
 The image plugin has a state containing attributes `src` (with a link to the actual image), `alt` with the alt text and `maxWidth` Todo: Are there more attributes?
 ```json
 {
@@ -84,10 +84,10 @@ The image plugin has a state containing attributes `src` (with a link to the act
 }
 ```
 
-## Multimedia plugin
+### Multimedia plugin
 The multimedia plugin consists of `explanation` and `multimedia`. Additional top-level attributes are `illustrating` (boolean whether the image is only for illustration) and `width`. The explanation contains a rows plugin with some text. (Todo: Are other things allowed here?) The multimedia contains e.g. an image plugin. (Todo: Are other things allowed? Do we need others?)
 
-## Spoiler plugin
+### Spoiler plugin
 The spoiler contains a `title` (which indeed directly contains the title, without further wrapping in text plugins) and `content`, which contains a rows plugin. Todo: Which content is allowed?
 ```json
         {
@@ -102,7 +102,7 @@ The spoiler contains a `title` (which indeed directly contains the title, withou
         }
 ```
 
-## Injection plugin
+### Injection plugin
 Injections inject one piece of serlo content into another. The `state` contains only the serlo id of the injected content (with preceeding `/`).
 
 
