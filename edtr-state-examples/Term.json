@@ -1,0 +1,88 @@
+
+      {
+        "type": "equations",
+        "steps": [
+          {
+            "left": "",
+            "leftSource": "",
+            "sign": "equals",
+            "right": "1",
+            "rightSource": "1",
+            "transform": "",
+            "transformSource": "",
+            "explanation": [
+              {
+                "type": "slate-container",
+                "children": [
+                  {
+                    "type": "slate-p",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "1 Erklärung"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "left": "",
+            "leftSource": "",
+            "sign": "equals",
+            "right": "2",
+            "rightSource": "2",
+            "transform": "",
+            "transformSource": "",
+            "explanation": [
+              {
+                "type": "slate-container",
+                "children": [
+                  {
+                    "type": "slate-p",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "2 Erklärung"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "left": "",
+            "leftSource": "",
+            "sign": "equals",
+            "right": "3",
+            "rightSource": "3",
+            "transform": "",
+            "transformSource": "",
+            "explanation": [
+              {
+                "type": "slate-container",
+                "children": [
+                  {
+                    "type": "slate-p",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firstExplanation": [
+          {
+            "type": "slate-container",
+            "children": [
+              {
+                "type": "slate-p",
+                "children": []
+              }
+            ]
+          }
+        ],
+        "transformationTarget": "term"
+        }

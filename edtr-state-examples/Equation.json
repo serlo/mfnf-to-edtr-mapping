@@ -1,0 +1,67 @@
+      {
+        "type": "equations",
+        "steps": [
+          {
+            "left": "1\\ l",
+            "leftSource": "1\\ l",
+            "sign": "equals",
+            "right": "1\\ r",
+            "rightSource": "1\\ r",
+            "transform": "1\\ umformung",
+            "transformSource": "1\\ umformung",
+            "explanation": [
+              {
+                "type": "slate-container",
+                "children": [
+                  {
+                    "type": "slate-p",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "1 Erklärung"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "left": "2\\ l",
+            "leftSource": "2\\ l",
+            "sign": "equals",
+            "right": "2\\ r",
+            "rightSource": "2\\ r",
+            "transform": "2\\ umformung",
+            "transformSource": "2\\ umformung",
+            "explanation": [
+              {
+                "type": "slate-container",
+                "children": [
+                  {
+                    "type": "slate-p",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firstExplanation": [
+          {
+            "type": "slate-container",
+            "children": [
+              {
+                "type": "slate-p",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "0 Erklärung"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "transformationTarget": "equation"
+      }

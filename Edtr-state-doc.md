@@ -105,4 +105,13 @@ The spoiler contains a `title` (which indeed directly contains the title, withou
 ### Injection plugin
 Injections inject one piece of serlo content into another. The `state` contains only the serlo id of the injected content (with preceeding `/`).
 
+### Equations plugin
+The equations plugin has two modes, for euqations and for term manipulations. Attribute `transformationTarget` is set to either `equation` or `term`, for these modes. In both modes, a list of `steps` is given. Each step contains attributes `left`, `leftSource`, `sign`, `right`, `rightSource`, `transform`, `transformSource`, `explanation`. Besides the steps, there is an attribute `firstExplanation` to be filled with a slate-container, which contains the first explanation to be shown before the first step.
 
+`sign` is for the comparison sign and can take values `equals`, ... Todo!
+
+The equations mode uses `left` and `leftSource` for the left-hand side, , `right` and `rightSource` for the right-hand side, `transform` and `transformSource` for the 
+description of the next transformation. Each of these pairs of attributes is filled with the same latex code of formulae. Todo: Why do we have two of them, each?
+`explanation` contains a slate-container plugin with an additional explanation to be shown in between the current and the next step.
+
+In the term mode, all of `left`, `leftSource`, `transform`, `transformSource` and the content of `firstExplanation` must be empty.
