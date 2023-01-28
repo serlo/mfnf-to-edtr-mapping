@@ -10,7 +10,9 @@ cat >"$FILENAME" <<EOF
 <body>
 <ul>
 EOF
-article_regex="^\* \[\[(Mathe für Nicht-Freaks: .*)\|.*]]"
+article_regex="^\* \[\[((Mathe für Nicht-Freaks:|Serlo: EN:) .*)\|.*]]"
+heading_regex="^(==*) \[*([^]]*)]* ==*$"
+inner_heading_regex="[^\|]*\|(.*)"
 while read -r line
 do
     if [[ "$line" =~ $article_regex ]]
@@ -29,6 +31,18 @@ do
             echo -ne "&nbsp;<span class=\"status-error\">error</span>" >>"$FILENAME"
         fi
         echo "</li>" >>"$FILENAME"
+    elif [[ "$line" =~ $heading_regex ]]
+    then
+        echo '</ul>' >>"$FILENAME"
+        heading_level=${#BASH_REMATCH[1]}
+        inner_heading=${BASH_REMATCH[2]}
+        if [[ "$inner_heading" =~ $inner_heading_regex ]]
+        then
+            echo "<h$heading_level>${BASH_REMATCH[1]}</h$heading_level>" >>"$FILENAME"
+        else
+            echo "<h$heading_level>$inner_heading</h$heading_level>" >>"$FILENAME"
+        fi
+        echo '<ul>' >>"$FILENAME"
     fi
 done <sitemap
 echo '</ul>' >>"$FILENAME"
