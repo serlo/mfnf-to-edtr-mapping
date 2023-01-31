@@ -16,7 +16,7 @@ jobs:
       - id: version
         uses: salsify/action-detect-and-tag-new-version@v2
         with:
-          version-command: cat mfnf2serlo/version
+          version-command: cat ./mfnf2serlo/version
   docker-image:
     permissions:
       contents: 'read'
