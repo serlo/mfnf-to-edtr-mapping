@@ -30,5 +30,6 @@ jobs:
       - uses: 'google-github-actions/auth@v1'
         with:
           credentials_json: '${{ secrets.GCP_GH_ACTIONS_CREDENTIALS }}'
+      - run: gcloud auth configure-docker
       - uses: google-github-actions/setup-gcloud@v1
       - run: ./mfnf2serlo/scripts/deploy_image.sh
